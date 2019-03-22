@@ -26,7 +26,8 @@ describe "Artist" do
       jay_z = Artist.new("Jay-Z")
       rap = Genre.new("rap")
       ninety_nine_problems = jay_z.new_song("Ninety Nine Problems", rap)
-
+      puts ninety_nine_problems
+      puts jay_z.songs[0]
       expect(jay_z.songs).to include(ninety_nine_problems)
       expect(ninety_nine_problems.artist).to eq(jay_z)
     end
